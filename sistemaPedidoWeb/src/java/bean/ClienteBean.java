@@ -17,13 +17,14 @@ import javax.enterprise.context.Dependent;
 @Dependent
 public class ClienteBean implements Serializable {
     
-    private String nome = "Dieinimy"; 
-    private String sobrenome =  "Maganha";
-    private String cpf = "555.555.555-55";
+    private String nome; 
+    private String sobrenome;
+    private String cpf;
     
     
     public String logar(){
-        return nome + " " + sobrenome;
+        System.out.println("Saporra" + nome);
+        return "faces/CadastroCliente.xhtml";
     }
 
     public String getNome() {
